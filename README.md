@@ -1,12 +1,24 @@
-# React + Vite
+Emoji Hub is a simple web app where users can look for, log in, and add favourite emojis to your personal account.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+-  Search emojis by their names
+-  Sort them by category or alphabet
+-  Login with your account
+-  Add and manage favourite emojis
 
-Currently, two official plugins are available:
+## Tech Stack
+- ReactJS
+- React Router
+- React Query
+- React redux
+- Express.js (backend)
+- MongoDB (storage)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+1. Clone the repo  
+2. Install dependencies (`npm install`)  
+3. Run backend and frontend
+4. `npm run dev` on first terminal
+5. `cd backend` on a new second terminal
+6. `npm install` on a second terminal
+7. `node app.js` on second terminal  
