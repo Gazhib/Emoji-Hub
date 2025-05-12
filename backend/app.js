@@ -7,8 +7,8 @@ const mongoose = require("mongoose");
 const { v4: uuidv4 } = require("uuid");
 const cookieParser = require("cookie-parser");
 require("dotenv").config({ path: "../.env" });
-const db = process.env.DATABASE_URL;
-const secretKey = process.env.SECRET_KEY
+const db = "mongodb+srv://bvalerianuly:nDrNG15AckmeeC5y@cluster0.o9ouayy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const secretKey = "SOmeRandom Stuff in here brotha"
 const app = express();
 const secret = new TextEncoder().encode(secretKey);
 

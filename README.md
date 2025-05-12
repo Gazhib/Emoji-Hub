@@ -22,3 +22,6 @@ Emoji Hub is a simple web app where users can look for, log in, and add favourit
 5. `cd backend` on a new second terminal
 6. `npm install` on a second terminal
 7. `node app.js` on second terminal  
+
+Video for nfactorial: 
+https://drive.google.com/drive/folders/1UvvFAVF8HSDOE-44a6at4t1IcD9Oc8qK
