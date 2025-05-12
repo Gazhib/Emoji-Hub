@@ -2,9 +2,11 @@ import { forwardRef, useState, useEffect } from "react";
 import styles from "./Modal.module.css";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 const Modal = forwardRef(function Modal({ emoji }, ref) {
   const [isFavourite, setIsFavourite] = useState(false);
   const navigate = useNavigate();
+  const isLogged = useSelector((state) => state.auth.isLogged);
   const queryClient = useQueryClient();
   const queryFn = async () => {
     if (!emoji) return;
@@ -54,10 +56,9 @@ const Modal = forwardRef(function Modal({ emoji }, ref) {
     );
     const responseData = await response.json();
     setIsFavourite(false);
-    queryClient.invalidateQueries(["email"])
-    ref.current.close()
+    queryClient.invalidateQueries(["email"]);
+    ref.current.close();
   }
-
 
   return (
     <dialog ref={ref} className={styles.Modal}>
@@ -68,11 +69,13 @@ const Modal = forwardRef(function Modal({ emoji }, ref) {
           <h2>Category: {emoji.category}</h2>
           <h2>Group: {emoji.group}</h2>
           {isLoading && "Loading..."}
-          {!isFavourite && !isLoading && (
+          {isLogged && !isFavourite && !isLoading && (
             <button onClick={() => addToFavourites()}>Add to favourites</button>
           )}
-          {isFavourite && !isLoading && (
-            <button onClick={() => deleteFromFavourites()}>Delete from favourites</button>
+          {isLogged && isFavourite && !isLoading && (
+            <button onClick={() => deleteFromFavourites()}>
+              Delete from favourites
+            </button>
           )}
           <form method="dialog">
             <button>Close</button>
