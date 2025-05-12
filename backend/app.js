@@ -81,7 +81,7 @@ app.post("/api/login", async (req, res) => {
   }
 
   const isCorrectPassword = await bcrypt.compare(password, user.password);
-  if (isCorrectPassword) {
+  if (!isCorrectPassword) {
     return res.status(401).json("Not correct password");
   }
 
