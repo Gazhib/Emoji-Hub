@@ -1,0 +1,48 @@
+.emojis {
+    list-style: none;
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.emojis .emoji {
+    border: none;
+    font-size: 5rem;
+    background-color: #ece4f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    cursor: pointer;
+    width: 16rem;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emoji:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.emojiRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.heading{
+    text-align: center;
+}
+.showMoreButton{
+    margin: 2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    width: 10rem;
+}

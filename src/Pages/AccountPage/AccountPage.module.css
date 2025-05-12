@@ -1,0 +1,29 @@
+.AccountPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.AccountPage h2 {
+  font-size: 1.5rem;
+}
+
+.AccountPage p {
+  font-size: 1rem;
+  color: #333;
+}
+
+
+.AccountPage ul li {
+  margin-bottom: 0.5rem;
+}
+
+.logoutButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #d00101;
+  color: #fff;
+  width: 20%;
+  cursor: pointer;
+}

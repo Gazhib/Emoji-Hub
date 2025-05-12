@@ -1,0 +1,34 @@
+.LandingPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+}
+
+.LandingPage header {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+.LandingPage a{
+    color: rgb(37, 39, 163);
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+}
+
+.LandingPage .emoji {
+    transition: transform 0.3s ease;
+    font-size: 15rem;
+}
+
+.emojiList{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}

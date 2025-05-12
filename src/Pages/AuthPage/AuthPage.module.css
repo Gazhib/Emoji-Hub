@@ -1,0 +1,17 @@
+.AuthPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.auth {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.problems h1 {
+  color: red;
+  font-size: 18px;
+}

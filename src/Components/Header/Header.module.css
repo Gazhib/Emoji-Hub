@@ -1,0 +1,29 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1f1f1f;
+}
+
+.Header .left,
+.Header .right {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.Header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+}
+
+.Header a:hover,
+.Header a:focus {
+    color: #f4c300;
+    outline: none;
+}
